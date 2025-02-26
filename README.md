@@ -1,6 +1,6 @@
 # Proving Olympiad Inequalities by Synergizing LLMs and Symbolic Reasoning
 
-This is the official code for NeqLIPS, a powerful Olympiad Inequalities Prover.
+This is the official code for NeqLIPS, a powerful Olympiad-level Inequality Prover.
 
 ![NeqLIPS](./Figures/framework.png)
 
