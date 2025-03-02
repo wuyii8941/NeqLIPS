@@ -131,9 +131,6 @@ The formal proofs of MO-INT, ChenNEQ, and 567Neq are provided in `Neq/Math/Probl
 
 If you have any questions, please feel free to reach out to us at [lizn@smail.nju.edu.cn](mailto:lizn@smail.nju.edu.cn) or submit an issue here.
 
-## License
-
-This code repository is licensed under the MIT License.
 
 ## Citation
 
