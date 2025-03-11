@@ -1,0 +1,6 @@
+{
+  "step_id": 20,
+  "session_id": "P15",
+  "result": "sat",
+  "message": "[b := 383/128, c := 1/512, a := 3/512]"
+}

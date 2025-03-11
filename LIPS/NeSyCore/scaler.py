@@ -1,6 +1,10 @@
 from typing import Tuple, List, Dict
 from sympy import Expr
 
+import os
+import glob
+from datetime import datetime
+
 import ast
 import json
 import random
@@ -45,8 +49,6 @@ class Scaler:
         self.cache_check_validity = manager.dict()  # (lemma_out - ref_expr) -> bool
         self.test_cases = manager.list() # initial test cases list
         self.cycle_lemma_out = manager.list()  # skip cycle results if the problem is cycle form
-        # initialize problem
-        self.sym_cons = None
 
     def initialize_smt_config(self, smt_config: str):
         """Initialize the SMT configuration."""
@@ -102,6 +104,15 @@ class Scaler:
         if not self.test_cases:
             raise ValueError("The test cases cannot be generated automatically, must set it manually")
         self.logger.info(f"Set test cases for scaling: {self.test_cases}")
+        
+
+
+    # def save_to_dataset(self, code: str, result: str):
+    #     try:
+    #         self.logger.info(f"enter save_to_dataset")
+    #         self.logger.info(f"Start saving {result} case to dataset")
+    #     except Exception as e:
+    #         self.logger.error(f"Exception in save_to_dataset: {e}", exc_info=True)
 
     def set_problem(self, problem: Problem):
         """Set the problem to be proved, pass useful arguments
@@ -213,6 +224,7 @@ class Scaler:
         # if self.condition_check > 0:
         # cond4 = True
         return True, "Test check Pass!"
+    
 
     @timeout(30)
     def check_by_verify(
@@ -244,13 +256,87 @@ class Scaler:
             code = parser.sympy2smt(self.sym_cons, concl)
             ok, msg = utils.smtsolve(code, self.smt_solvers, self.smt_timeout)
             smt_res = parser.parse_smt_result(ok, self.smt_level)
+            
+            # 根据结果类型保存步骤
+            self._save_verification_step(ref_expr, lemma_in_expr, lemma_out_expr, concl, code, ok, msg)
+            
             if str(ok) == "sat":  # save test case
                 return False, msg
             if smt_res > 0:
                 return True, msg
             else:
                 return False, msg
-
+ 
+    def _save_verification_step(self, ref_expr, lemma_in_expr, lemma_out_expr, concl, code, ok, msg):
+        """保存SMT验证步骤，确保按顺序生成文件而不覆盖"""
+        
+        # 获取会话ID（从环境变量）
+        session_id = os.environ.get("SCALER_SESSION_ID", "unknown")
+        
+        # 创建保存目录结构
+        output_base = "Evan__chen_results"
+        # 使用session_id作为目录名
+        base_dir = os.path.join(output_base, session_id, "verification_steps")
+        os.makedirs(base_dir, exist_ok=True)
+        
+        # 获取结果类型
+        result_type = str(ok).lower()
+        result_dir = os.path.join(base_dir, result_type)
+        os.makedirs(result_dir, exist_ok=True)
+        
+        # 使用文件系统来确定下一个步骤编号
+        existing_files = glob.glob(os.path.join(result_dir, "step_*.json"))
+        
+        # 解析现有文件名以获取最大步骤编号
+        max_step = 0
+        for file_path in existing_files:
+            try:
+                # 提取文件名中的数字部分
+                file_name = os.path.basename(file_path)
+                step_num = int(file_name.split('_')[1].split('.')[0])
+                max_step = max(max_step, step_num)
+            except (ValueError, IndexError):
+                pass
+        
+        # 下一个步骤编号
+        next_step = max_step + 1
+        
+        # 构建文件名
+        filename_base = f"step_{next_step}"
+        
+        # 简化的步骤数据
+        step_data = {
+            "step_id": next_step,
+            "session_id": session_id,
+            "result": str(ok),
+            "message": msg if msg else "No message"
+        }
+        
+        # 保存SMT代码和结果数据
+        if code:
+            # 保存SMT代码到结果目录
+            smt_path = os.path.join(result_dir, f"{filename_base}.smt2")
+            try:
+                with open(smt_path, "w", encoding="utf-8") as f:
+                    f.write(code)
+                self.logger.info(f"已保存SMT代码到 {smt_path}")
+            except Exception as e:
+                self.logger.error(f"保存SMT代码时出错: {e}")
+            
+            # 保存步骤数据
+            data_path = os.path.join(result_dir, f"{filename_base}.json")
+            try:
+                with open(data_path, "w", encoding="utf-8") as f:
+                    json.dump(step_data, f, indent=2, ensure_ascii=False)
+                self.logger.info(f"已保存步骤数据到 {data_path}")
+            except Exception as e:
+                self.logger.error(f"保存步骤数据时出错: {e}")
+        else:
+            self.logger.warning("SMT代码为空，跳过文件保存")
+            
+        # 记录验证步骤信息
+        self.logger.info(f"验证步骤 {next_step}: 结果={ok}, 会话ID={session_id}")
+            
     def instantiate(self, pattern: Dict[str, str], premise: str) -> Tuple[str, str, str, List[str]]:
         """instantiate the input and output expressions of scaling lemma using pattern
             there could be some cycle dup in the scaling,

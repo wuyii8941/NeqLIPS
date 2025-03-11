@@ -1,0 +1,8 @@
+(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(assert (= (* a b c) 1))
+(assert (not (<= (+ 3 (* -1 (pow a 6)) (* -1 (pow b 6)) (* -1 (pow c 6)) (* -3 (pow a 4) (pow b 2)) (* -3 (pow b 2) (pow c 4)) (* 6 (pow a 3) (pow b 3) (pow c 3))) 0)))
+(check-sat)
+(get-model)
+(exit)

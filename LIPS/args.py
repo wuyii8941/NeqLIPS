@@ -31,7 +31,7 @@ def parse_args():
     # params for the smt solver
     argparser.add_argument("--smt_config", default="", type=str, help="SMT solvers for accepting the tactic")
     # LLM params
-    argparser.add_argument("--oai_version", default="gpt-4", type=str, help="API for LLM")
+    argparser.add_argument("--oai_version", default="gpt-4o", type=str, help="API for LLM")
     argparser.add_argument("--temperature", default=0.7, type=float, help="Temperature for LLM sampling")
     argparser.add_argument("--top_p", default=0.95, type=float, help="Top p for LLM sampling")
     argparser.add_argument("--max_tokens", default=4096, type=int, help="Max tokens for LLM sampling")
