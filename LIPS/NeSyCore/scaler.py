@@ -274,7 +274,7 @@ class Scaler:
         session_id = os.environ.get("SCALER_SESSION_ID", "unknown")
         
         # 创建保存目录结构
-        output_base = "Evan__chen_results"
+        output_base = "Evan_chen_results"
         # 使用session_id作为目录名
         base_dir = os.path.join(output_base, session_id, "verification_steps")
         os.makedirs(base_dir, exist_ok=True)

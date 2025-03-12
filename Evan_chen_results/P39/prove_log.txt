@@ -1,10 +1,1083 @@
-Traceback (most recent call last):
-  File "/home/argustest/tzh/NeqLIPS/prove.py", line 1, in <module>
-    from LIPS import parse_args
-  File "/home/argustest/tzh/NeqLIPS/LIPS/__init__.py", line 1, in <module>
-    from .LeanIO import LeanIO
-  File "/home/argustest/tzh/NeqLIPS/LIPS/LeanIO/__init__.py", line 1, in <module>
-    from .env import LeanIO
-  File "/home/argustest/tzh/NeqLIPS/LIPS/LeanIO/env.py", line 4, in <module>
-    from wrapt_timeout_decorator import timeout
-ModuleNotFoundError: No module named 'wrapt_timeout_decorator'
+{'check_cycle': 0,
+ 'check_homogeneous': 1,
+ 'focus_ops': 'dm',
+ 'force_rebuild': 1,
+ 'init_test': 'auto',
+ 'log_level': 'INFO',
+ 'math_dir': './Neq/math',
+ 'max_tokens': 4096,
+ 'norm_goal': 0,
+ 'num_threads': 96,
+ 'oai_version': 'gpt-4o',
+ 'problem': 'theorem P39 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a * b * c = 1) : 3 / 2  ≤ (a * b * c) ^ 2 / (a ^ 3 * (b + c)) + (a * b * c) ^ '
+            '2 / (b ^ 3 * (c + a)) + (a * b * c) ^ 2 / (c ^ 3 * (a + b)) := by  sorry',
+ 'prover_vb': 0,
+ 'rank_size': 10,
+ 'repl_dir': './Neq/repl',
+ 'rewrite_length': 5,
+ 'rewrite_limit': 1,
+ 'save_dir': 'Results',
+ 'scale_equality': 0,
+ 'scale_limit': 128,
+ 'smt_config': '',
+ 'sym_rewrite': 0,
+ 'temperature': 0.7,
+ 'top_p': 0.95}
+================================================== Prover Configs ==================================================
+LeanLM configuration: 
+oai details: gpt-4o
+llm generation details: temperature=0.7, top_p=0.95, max_tokens=4096
+smt config: 
+initial test case: auto
+save directory: Results
+
+
+================================================== Iteration 0 ==================================================
+Start time: 2025-03-12 03:44:44.765584
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 1 ==================================================
+Start time: 2025-03-12 03:53:28.276707
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 2 ==================================================
+Start time: 2025-03-12 03:56:56.199483
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 3 ==================================================
+Start time: 2025-03-12 03:56:58.741019
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 4 ==================================================
+Start time: 2025-03-12 03:57:01.278029
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 5 ==================================================
+Start time: 2025-03-12 03:57:03.818031
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 6 ==================================================
+Start time: 2025-03-12 03:57:06.352763
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 7 ==================================================
+Start time: 2025-03-12 03:57:08.886571
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 8 ==================================================
+Start time: 2025-03-12 03:57:11.410515
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 9 ==================================================
+Start time: 2025-03-12 03:57:13.937291
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 10 ==================================================
+Start time: 2025-03-12 03:57:15.108676
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 11 ==================================================
+Start time: 2025-03-12 03:57:16.273218
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 12 ==================================================
+Start time: 2025-03-12 03:57:17.418862
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 13 ==================================================
+Start time: 2025-03-12 03:57:18.572962
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 14 ==================================================
+Start time: 2025-03-12 03:57:19.734975
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 15 ==================================================
+Start time: 2025-03-12 03:57:20.888619
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 16 ==================================================
+Start time: 2025-03-12 03:57:22.041016
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 17 ==================================================
+Start time: 2025-03-12 03:57:23.185277
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 18 ==================================================
+Start time: 2025-03-12 03:57:24.342764
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 19 ==================================================
+Start time: 2025-03-12 03:57:25.509408
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 20 ==================================================
+Start time: 2025-03-12 03:57:26.695403
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 21 ==================================================
+Start time: 2025-03-12 03:57:27.852577
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 22 ==================================================
+Start time: 2025-03-12 03:57:29.011747
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 23 ==================================================
+Start time: 2025-03-12 03:57:30.166241
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 24 ==================================================
+Start time: 2025-03-12 03:57:31.327420
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 25 ==================================================
+Start time: 2025-03-12 03:57:33.885855
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 26 ==================================================
+Start time: 2025-03-12 03:58:14.250403
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 27 ==================================================
+Start time: 2025-03-12 03:58:54.033285
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 28 ==================================================
+Start time: 2025-03-12 04:00:15.493094
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 29 ==================================================
+Start time: 2025-03-12 04:00:55.593353
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 30 ==================================================
+Start time: 2025-03-12 04:02:18.880629
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 31 ==================================================
+Start time: 2025-03-12 04:02:58.791006
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 32 ==================================================
+Start time: 2025-03-12 04:04:21.159329
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 33 ==================================================
+Start time: 2025-03-12 04:05:43.152558
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 34 ==================================================
+Start time: 2025-03-12 04:07:08.448499
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 35 ==================================================
+Start time: 2025-03-12 04:08:28.755339
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 36 ==================================================
+Start time: 2025-03-12 04:09:52.165213
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 37 ==================================================
+Start time: 2025-03-12 04:11:20.688449
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 38 ==================================================
+Start time: 2025-03-12 04:11:21.897276
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 39 ==================================================
+Start time: 2025-03-12 04:11:23.101385
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 40 ==================================================
+Start time: 2025-03-12 04:11:24.335682
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 41 ==================================================
+Start time: 2025-03-12 04:11:25.557095
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 42 ==================================================
+Start time: 2025-03-12 04:11:26.743735
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 43 ==================================================
+Start time: 2025-03-12 04:11:27.940900
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 44 ==================================================
+Start time: 2025-03-12 04:11:29.104890
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 45 ==================================================
+Start time: 2025-03-12 04:11:30.268191
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 46 ==================================================
+Start time: 2025-03-12 04:11:31.433696
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 47 ==================================================
+Start time: 2025-03-12 04:11:32.595200
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 48 ==================================================
+Start time: 2025-03-12 04:11:33.756613
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 49 ==================================================
+Start time: 2025-03-12 04:11:34.926632
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 50 ==================================================
+Start time: 2025-03-12 04:11:36.092452
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 51 ==================================================
+Start time: 2025-03-12 04:11:37.243647
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 52 ==================================================
+Start time: 2025-03-12 04:11:38.402533
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 53 ==================================================
+Start time: 2025-03-12 04:11:39.562479
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 54 ==================================================
+Start time: 2025-03-12 04:11:40.720107
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 55 ==================================================
+Start time: 2025-03-12 04:11:41.882208
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 56 ==================================================
+Start time: 2025-03-12 04:11:43.046870
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 57 ==================================================
+Start time: 2025-03-12 04:11:44.204321
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 58 ==================================================
+Start time: 2025-03-12 04:11:45.365030
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 59 ==================================================
+Start time: 2025-03-12 04:11:46.529134
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 60 ==================================================
+Start time: 2025-03-12 04:11:49.074923
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 61 ==================================================
+Start time: 2025-03-12 04:11:51.627588
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 62 ==================================================
+Start time: 2025-03-12 04:11:54.395705
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 63 ==================================================
+Start time: 2025-03-12 04:11:57.069027
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 64 ==================================================
+Start time: 2025-03-12 04:11:59.636014
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 65 ==================================================
+Start time: 2025-03-12 04:12:02.212549
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 66 ==================================================
+Start time: 2025-03-12 04:13:28.661153
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 67 ==================================================
+Start time: 2025-03-12 04:14:53.081167
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 68 ==================================================
+Start time: 2025-03-12 04:14:54.263015
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 69 ==================================================
+Start time: 2025-03-12 04:14:55.416054
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 70 ==================================================
+Start time: 2025-03-12 04:14:56.562598
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 71 ==================================================
+Start time: 2025-03-12 04:14:57.723798
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 72 ==================================================
+Start time: 2025-03-12 04:14:58.866107
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 73 ==================================================
+Start time: 2025-03-12 04:15:00.019337
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 74 ==================================================
+Start time: 2025-03-12 04:15:01.163268
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 75 ==================================================
+Start time: 2025-03-12 04:15:02.329327
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 76 ==================================================
+Start time: 2025-03-12 04:15:03.491967
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 77 ==================================================
+Start time: 2025-03-12 04:15:04.651321
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 78 ==================================================
+Start time: 2025-03-12 04:15:05.810880
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 79 ==================================================
+Start time: 2025-03-12 04:15:06.966524
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 80 ==================================================
+Start time: 2025-03-12 04:15:08.126220
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 81 ==================================================
+Start time: 2025-03-12 04:15:09.283935
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 82 ==================================================
+Start time: 2025-03-12 04:15:11.830408
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 83 ==================================================
+Start time: 2025-03-12 04:15:14.398627
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 84 ==================================================
+Start time: 2025-03-12 04:15:16.960080
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solver returns unknown
+================================================== Iteration 85 ==================================================
+Start time: 2025-03-12 04:15:18.286201
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 86 ==================================================
+Start time: 2025-03-12 04:15:20.828974
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 87 ==================================================
+Start time: 2025-03-12 04:15:23.404420
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 88 ==================================================
+Start time: 2025-03-12 04:15:25.964320
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 89 ==================================================
+Start time: 2025-03-12 04:15:28.621512
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 90 ==================================================
+Start time: 2025-03-12 04:15:31.177392
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 91 ==================================================
+Start time: 2025-03-12 04:15:33.735230
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 92 ==================================================
+Start time: 2025-03-12 04:15:36.417000
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 93 ==================================================
+Start time: 2025-03-12 04:15:39.035807
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 94 ==================================================
+Start time: 2025-03-12 04:15:41.718479
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 95 ==================================================
+Start time: 2025-03-12 04:15:44.354838
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 96 ==================================================
+Start time: 2025-03-12 04:15:46.912402
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 97 ==================================================
+Start time: 2025-03-12 04:15:49.475463
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 98 ==================================================
+Start time: 2025-03-12 04:15:52.038866
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 99 ==================================================
+Start time: 2025-03-12 04:15:54.607154
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 100 ==================================================
+Start time: 2025-03-12 04:15:57.145846
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 101 ==================================================
+Start time: 2025-03-12 04:15:59.699642
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 102 ==================================================
+Start time: 2025-03-12 04:16:02.244161
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 103 ==================================================
+Start time: 2025-03-12 04:16:04.787032
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+Failed to solve the problem: solve timeout
+================================================== Iteration 104 ==================================================
+Start time: 2025-03-12 04:16:07.346292
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 105 ==================================================
+Start time: 2025-03-12 04:16:24.956123
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 106 ==================================================
+Start time: 2025-03-12 04:16:37.434101
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+================================================== Iteration 107 ==================================================
+Start time: 2025-03-12 04:16:44.542070
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+/home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+  warnings.warn(f"gpt-4 encounter an error {e}")
+FINISH!!!
+The FINAL PROOF IS AS FOLLOWS
+theorem P39 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a * b * c = 1) : 3 / 2  ≤ (a * b * c) ^ 2 / (a ^ 3 * (b + c)) + (a * b * c) ^ 2 / (b ^ 3 * (c + a)) + (a * b * c) ^ 2 / (c ^ 3 * (a + b)) := by  
+  llm_frac_apart 3 / 2 - ((a * b * c) ^ 2 / (a ^ 3 * (b + c)) + (a * b * c) ^ 2 / (b ^ 3 * (c + a)) + (a * b * c) ^ 2 / (c ^ 3 * (a + b))) = 3 / 2 - (a ^ 2 * b ^ 2 / ((a + b) * (c))) - (a ^ 2 * c ^ 2 / ((a + c) * (b))) - (b ^ 2 * c ^ 2 / ((a) * (b + c)))
+  scale Titu_normal_right_3vars (u1 := (c * b)) (u2 := (a * c)) (u3 := (a * b)) (v1 := (a * (b + c))) (v2 := ((a + c) * b)) (v3 := ((a + b) * c)) (k := 1) (l := 0) (left := 3 / 2)
+  llm_cancel_factor (3 / 2) - ((c * b + a * c + a * b) ^ 2 / (a * (b + c) + (a + c) * b + (a + b) * c)) = (1 / 2) * (3 - (a * b) - (a * c) - (b * c))
+  sym_pqr_method 3 * (a * b ^ 2) ^ (2 / 3) - (b ^ 2) - (2 * a * b) ≤ 0
+  llm_simplify 3 * (a * b ^ 2) ^ (2 / 3) - b ^ 2 - 2 * a * b - (0) = 3 * a ^ (2 / 3) * b ^ (4 / 3) - (b ^ 2) - (2 * a * b)
+  scale weighted_AM_GM_normal_right_2vars (u := a) (v := b) (i1 := (b * 2)) (i2 := b) (k := 1) (l := 0) (left := 3 * a ^ (2 / 3) * b ^ (4 / 3))
+  sym_simplify 3 * a ^ (2 / 3) * b ^ (4 / 3)  -  (b * 2 + b) * (a ^ (b * 2) * b ^ b) ^ (1 / (b * 2 + b)) = 0
+  try close

@@ -1,0 +1,8 @@
+(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(assert (= (+ a b c) 3))
+(assert (not (<= (+ (* -2 (pow (* (+ (* 144 (pow 2 (/ 1 2)) (pow c 4)) (* 288 (pow 2 (/ 1 2)) (pow a 2) (pow b 2))) (+ (* 288 (pow 2 (/ 1 2)) (pow a 2) (pow c 2)) (* 288 (pow 2 (/ 1 2)) (pow b 2) (pow c 2)))) (/ 1 2))) (* -512 a (pow b 3)) (* -512 b (pow c 3)) (* -512 c (pow a 3)) (* -144 (pow 2 (/ 1 2)) (pow a 4)) (* -144 (pow 2 (/ 1 2)) (pow b 4)) (* 512 a (pow c 3)) (* 512 b (pow a 3)) (* 512 c (pow b 3))) 0)))
+(check-sat)
+(get-model)
+(exit)

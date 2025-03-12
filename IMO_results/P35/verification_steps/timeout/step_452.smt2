@@ -6,7 +6,7 @@
 (assert (> a 0))
 (assert (> b 0))
 (assert (> c 0))
-(assert (not (<= (+ (/ -1 2) (* (/ 1 4) (pow 2 (/ 1 2)) (pow (+ 6 (* 17 (pow 2 -1))) (/ -29 2)) (pow (+ (/ 29 2) (* (/ 243 2) (pow 3 (/ 1 3)) (pow a 8) (pow b 8) (pow c 8) (pow (+ (pow a -1) (pow b -1) (pow c -1) (* 6 a) (* 6 b) (* 6 c)) (/ 8 3)))) (/ 29 2)))) 0)))
+(assert (not (<= (+ (/ -1 2) (* (/ 1 4) (pow (+ 2 25) -27) (pow (+ (/ 55 2) (* (/ 243 2) (pow 3 (/ 1 3)) (pow a 8) (pow b 8) (pow c 8) (pow (+ (pow a -1) (pow b -1) (pow c -1) (* 6 a) (* 6 b) (* 6 c)) (/ 8 3)))) 27))) 0)))
 (check-sat)
 (get-model)
 (exit)

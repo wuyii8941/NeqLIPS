@@ -1,0 +1,6 @@
+{
+  "step_id": 4,
+  "session_id": "P36",
+  "result": "exception",
+  "message": "solver z3 error: Z3 does not support logarithmic function"
+}

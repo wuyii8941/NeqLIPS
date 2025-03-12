@@ -178,21 +178,27 @@ class SMTAnalyzer:
             "all_votes": votes
         }
 
-def process_imo_results(imo_dir, collection_dir):
-    """处理IMO_results目录下的所有问题文件夹，收集最具代表性的unknown文件"""
-    print(f"处理IMO结果目录: {imo_dir}")
+def process_results(source_dir, collection_dir, source_name):
+    """处理结果目录下的所有问题文件夹，收集最具代表性的unknown文件
+    
+    Args:
+        source_dir: 源目录
+        collection_dir: 收集目录
+        source_name: 源名称（用于区分不同来源的文件）
+    """
+    print(f"处理{source_name}结果目录: {source_dir}")
     print(f"将最佳unknown文件收集到: {collection_dir}")
     
-    # 创建收集目录
-    os.makedirs(collection_dir, exist_ok=True)
-    
+    # 创建特定来源的收集子目录
+    source_collection_dir = os.path.join(collection_dir, source_name)
+    os.makedirs(source_collection_dir, exist_ok=True)
     
     results = {}
-    problem_dirs = [d for d in os.listdir(imo_dir) if os.path.isdir(os.path.join(imo_dir, d)) and d.startswith('P')]
+    problem_dirs = [d for d in os.listdir(source_dir) if os.path.isdir(os.path.join(source_dir, d)) and d.startswith('P')]
     
     for problem_dir in sorted(problem_dirs, key=lambda x: int(x[1:]) if x[1:].isdigit() else float('inf')):
         print(f"\n处理问题: {problem_dir}")
-        problem_path = os.path.join(imo_dir, problem_dir)
+        problem_path = os.path.join(source_dir, problem_dir)
         
         # 检查验证步骤目录是否存在
         verification_path = os.path.join(problem_path, "verification_steps")
@@ -224,15 +230,15 @@ def process_imo_results(imo_dir, collection_dir):
         print(f"  已为 {problem_dir} 选出最佳unknown文件: {best_unknown['filename']}")
         print(f"    获得 {best_unknown['votes']['total_votes']} 票，其中 {best_unknown['votes']['sat_votes']} 票来自sat，{best_unknown['votes']['unsat_votes']} 票来自unsat")
         
-        # 保存最佳unknown到收集目录
+        # 保存最佳unknown到特定来源的收集目录
         best_file = best_unknown["filename"]
         target_filename = f"{problem_dir}_{best_file}"
-        target_path = os.path.join(collection_dir, target_filename)
+        target_path = os.path.join(source_collection_dir, target_filename)
         
         try:
             with open(target_path, 'w', encoding='utf-8') as f:
                 f.write(best_unknown["content"])
-            print(f"  已将最佳unknown文件 {best_file} 保存为 {target_filename}")
+            print(f"  已将最佳unknown文件 {best_file} 保存为 {target_filename} 到 {source_name} 目录")
         except Exception as e:
             print(f"  警告: 无法保存文件 {target_path}: {e}")
             continue
@@ -247,40 +253,69 @@ def process_imo_results(imo_dir, collection_dir):
             "weighted_score": best_unknown["votes"]["weighted_score"],
             "primary_type": best_unknown["votes"]["primary_type"]
         }
-        
-    return results
-
-def main():
-    # 设置IMO结果的根目录
-    imo_results_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Evan_chen_results")
     
-    if not os.path.exists(imo_results_dir):
-        print(f"错误: 目录不存在 - {imo_results_dir}")
-        print("请确保IMO_results目录位于脚本所在目录下")
-        return
-    
-    # 设置收集目录
-    collection_dir = os.path.join(imo_results_dir, "collected_unknowns")
-    
-    # 处理IMO结果目录下的所有问题，并收集最佳unknown
-    results = process_imo_results(imo_results_dir, collection_dir)
-    
-    # 保存总的分析摘要
-    output_summary_path = os.path.join(collection_dir, "collection_summary.json")
+    # 为每个来源保存单独的摘要
+    output_summary_path = os.path.join(source_collection_dir, f"{source_name}_summary.json")
     with open(output_summary_path, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
     
-    # 打印总的分析摘要
-    print("\n总分析摘要:")
+    print(f"\n{source_name}分析摘要:")
     print(f"总共分析了 {len(results)} 个问题目录")
-    print(f"已收集 {len(results)} 个最佳unknown文件到 {collection_dir}")
+    print(f"已收集 {len(results)} 个最佳unknown文件到 {source_collection_dir}")
     
     # 统计不同类型的结果
     sat_primary = sum(1 for r in results.values() if r["primary_type"] == "sat")
     unsat_primary = sum(1 for r in results.values() if r["primary_type"] == "unsat")
     
     print(f"选出的最佳unknown文件中，有 {sat_primary} 个倾向于SAT，{unsat_primary} 个倾向于UNSAT")
-    print(f"\n分析摘要已保存到 {output_summary_path}")
+    print(f"\n{source_name}分析摘要已保存到 {output_summary_path}")
+    
+    return results
+
+def main():
+    # 获取当前脚本所在目录的路径
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # 设置结果的根目录
+    evan_chen_dir = os.path.join(script_dir, "Evan_chen_results")
+    imo_dir = os.path.join(script_dir, "IMO_results")
+    
+    # 设置收集总目录
+    collection_dir = os.path.join(script_dir, "collected_unknowns")
+    os.makedirs(collection_dir, exist_ok=True)
+    
+    all_results = {}
+    
+    # 处理Evan Chen结果
+    if os.path.exists(evan_chen_dir):
+        evan_chen_results = process_results(evan_chen_dir, collection_dir, "evan_chen")
+        all_results["evan_chen"] = evan_chen_results
+    else:
+        print(f"警告: 目录不存在 - {evan_chen_dir}")
+    
+    # 处理IMO结果
+    if os.path.exists(imo_dir):
+        imo_results = process_results(imo_dir, collection_dir, "imo")
+        all_results["imo"] = imo_results
+    else:
+        print(f"警告: 目录不存在 - {imo_dir}")
+    
+    # 保存总体分析摘要
+    output_summary_path = os.path.join(collection_dir, "collection_summary.json")
+    with open(output_summary_path, 'w', encoding='utf-8') as f:
+        json.dump(all_results, f, indent=2, ensure_ascii=False)
+    
+    # 打印总体分析摘要
+    print("\n总分析摘要:")
+    total_problems = sum(len(results) for results in all_results.values())
+    print(f"总共分析了 {total_problems} 个问题目录")
+    
+    # 统计不同来源的结果数量
+    for source, results in all_results.items():
+        source_dir = os.path.join(collection_dir, source)
+        print(f"- {source}: 收集了 {len(results)} 个最佳unknown文件到 {source_dir}")
+    
+    print(f"\n总分析摘要已保存到 {output_summary_path}")
 
 if __name__ == "__main__":
     main()

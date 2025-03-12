@@ -1,0 +1,8 @@
+(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(assert (= (+ a b c) 3))
+(assert (not (<= (+ (* (/ -81 512) (pow a 8)) (* (/ -81 512) (pow b 8)) (* (/ -81 512) (pow c 8)) (* (pow (+ (* (/ 47 128) (pow b 6)) (* (/ 47 128) (pow a 2) (pow b 6)) (* (/ 47 128) (pow a 2) (pow c 6)) (* (/ 47 128) (pow a 6) (pow b 2)) (* (/ 47 128) (pow a 6) (pow c 2)) (* (/ 47 128) (pow b 2) (pow c 6)) (* 2 a (pow b 3) (pow c 4)) (* 2 a (pow b 4) (pow c 3))) -1) (pow (+ (* (/ 47 128) c (pow b 6)) (* (/ 47 128) (pow a 2) (pow b 6)) (* (/ 47 128) (pow a 2) (pow c 6)) (* (/ 47 128) (pow a 6) (pow b 2)) (* (/ 47 128) (pow a 6) (pow c 2)) (* (/ 47 128) (pow b 2) (pow c 6)) (* 2 a (pow b 3) (pow c 4)) (* 2 a (pow b 4) (pow c 3))) 2)) (* (/ -755 256) (pow a 4) (pow b 4)) (* (/ -755 256) (pow a 4) (pow c 4)) (* (/ -755 256) (pow b 4) (pow c 4)) (* -2 a b (pow c 6)) (* -2 a c (pow b 6)) (* -2 b c (pow a 6)) (* -2 (pow a 2) (pow b 3) (pow c 3)) (* -2 (pow a 3) (pow b 2) (pow c 3)) (* -2 (pow a 3) (pow b 3) (pow c 2)) (* 2 b (pow a 3) (pow c 4)) (* 2 b (pow a 4) (pow c 3)) (* 2 c (pow a 3) (pow b 4)) (* 2 c (pow a 4) (pow b 3)) (* (/ -243 128) (pow a 2) (pow b 2) (pow c 4)) (* (/ -243 128) (pow a 2) (pow b 4) (pow c 2)) (* (/ -243 128) (pow a 4) (pow b 2) (pow c 2))) 0)))
+(check-sat)
+(get-model)
+(exit)

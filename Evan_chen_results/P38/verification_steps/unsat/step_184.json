@@ -1,0 +1,6 @@
+{
+  "step_id": 184,
+  "session_id": "P38",
+  "result": "unsat",
+  "message": "no counter example exists"
+}

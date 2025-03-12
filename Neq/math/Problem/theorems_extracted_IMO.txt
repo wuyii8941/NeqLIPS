@@ -1,0 +1,3 @@
+theorem P18 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) (h : a + b + c = 1) : 1 / 2 ≤ a / (9 * b * c + 4 * (b - c) ^ 2 + 1) + b / (9 * c * a + 4 * (c - a) ^ 2 + 1) + c / (9 * a * b + 4 * (a - b) ^ 2 + 1) := by
+theorem P19 {a b c d : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (hd : d > 0) (h : a + b + c + d = 4) : 2 / 3 ≤ a / (b ^ 3 + 4) + b / (c ^ 3 + 4) + c / (d ^ 3 + 4) + d / (a ^ 3 + 4) := by
+theorem P20 {a b c d : ℝ} (ha : a - b ≥ 0) (hb : b - c ≥ 0) (hc : c - d ≥ 0) (hd : d > 0) (h : a + b + c + d = 1) : (a + 2 * b + 3 * c + 4 * d) * a ^ a * b ^ b * c ^ c * d ^ d ≤ 1 := by
