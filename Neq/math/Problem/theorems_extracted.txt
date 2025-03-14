@@ -1,1 +1,42 @@
+theorem P1 {a b c : ℝ} : a * b + b * c + c * a ≤ a ^ 2 + b ^ 2 + c ^ 2 := by
+theorem P2 {a b c : ℝ} : a ^ 2 * b * c + b ^ 2 * c * a + c ^ 2 * a * b ≤ a ^ 4 + b ^ 4 + c ^ 4 := by
+theorem P3 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) : a ^ 2 * b + b ^ 2 * c + c ^ 2 * a ≤ a ^ 3 + b ^ 3 + c ^ 3 := by
+theorem P4 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) : a ^ 3 * b * c + b ^ 3 * c * a + c ^ 3 * a * b ≤ a ^ 5 + b ^ 5 + c ^ 5 := by
+theorem P5 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) : (a * b * c) * (a * b + b * c + c * a) ≤ a ^ 3 * b * c + b ^ 3 * c * a + c ^ 3 * a * b := by
+theorem P6 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) : (a ^ 2 * b ^ 2 * c) + (b ^ 2 * c ^ 2 * a) + (c ^ 2 * a ^ 2 * b) ≤ a ^ 5 + b ^ 5 + c ^ 5 := by
+theorem P7 {a b c : ℝ} (h : a * b * c = 1) : a + b + c ≤ a ^ 2 + b ^ 2 + c ^ 2 := by
+theorem P8 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0): a ^ 4 * b ^ 3 + b ^ 4 * c ^ 3 + c ^ 4 * a ^ 3 ≤ a ^ 7 + b ^ 7 + c ^ 7 := by
+theorem P9 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 1) : (1 / a) + (1 / b) + (1 / c) ≤ 3 + 2 * (a ^ 3 + b ^ 3 + c ^ 3) / (a * b * c) := by
+theorem P10 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0): a + b + c ≤ (a ^ 3) / (b * c) + (b ^ 3) / (c * a) + (c ^ 3) / (a * b) := by
+theorem P11 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (hp : a * b + a * c + b * c = a * b * c) (hq : 27 ≤ a * b * c) : 64 ≤ (a + 1) * (b + 1) * (c + 1) := by
+theorem P12 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a ^ 2 + b ^ 2 + c ^ 2 + a * b + b * c + c * a ≤ 2) : 6 ≤ 2 * (a * b + 1) / (a + b) ^ 2 + 2 * (b * c + 1) / (b + c) ^ 2 + 2 * (c * a + 1) / (c + a) ^ 2 := by
+theorem P13 {a b c d : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) (hd : d ≥ 0) (h : a * b * c * d = 1) : a + b + c + d ≤ a ^ 4 * b + b ^ 4 * c + c ^ 4 * d + d ^ 4 * a := by
+theorem P14 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 1 / a + 1 / b + 1 / c) : 1 / (2 * a + b + c) ^ 2 + 1 / (a + 2 * b + c) ^ 2 + 1 / (a + b + 2 * c) ^ 2 ≤ 3 / 16 := by
+theorem P15 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 2 * (1 / (a + b) + 1 / (b + c) + 1 / (c + a)) ≤ (1 / a + 1 / b + 1 / c) := by
+theorem P16 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 9 / (a + b + c) ≤ 2 * (1 / (a + b) + 1 / (b + c) + 1 / (c + a)) := by
+theorem P17 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h1 : a + b > c) (h2 : a + c > b) (hc : b + c > a): sqrt (a + b - c) + sqrt (b + c - a) + sqrt (c + a - b) ≤ sqrt (a) + sqrt (b) + sqrt (c) := by
+theorem P18 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 3) : 6 ≤ 18 / ((3 - c) * (4 - c)) + 18 / ((3 - b) * (4 - b)) + 18 / ((3 - a) * (4 - a)) + 2 * (a ^ 2 + b ^ 2 + c ^ 2) := by
+theorem P19 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 3) : 3 / 5 ≤ (3 - 2 * a) ^ 2 / (a ^ 2 + (3 - a) ^ 2) + (3 - 2 * b) ^ 2 / (b ^ 2 + (3 - b) ^ 2) + (3 - 2 * c) ^ 2 / (c ^ 2 + (3 - c) ^ 2) := by
+theorem P20 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : 2 * (a + b + c) ≤ (a * b + b * c + c * a)) : 3 / 5 ≤ (a - 1) ^ 2 / (a ^ 2 + 1) + (b - 1) ^ 2 / (b ^ 2 + 1) + (c - 1) ^ 2 / (c ^ 2 + 1) := by
+theorem P21 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 1 ≤ a / sqrt (a ^ 2 + 8 * b * c) + b / sqrt (b ^ 2 + 8 * a * c) + c / sqrt (c ^ 2 + 8 * a * b) := by
+theorem P22 {a b : ℝ} (ha : a > 0) (hb : b > 0) (h : a + b < 6): 1 / sqrt (1 + a) + 1 / sqrt (1 + b) + sqrt (a * b) / sqrt (a * b + 8) ≤ 2 := by
+theorem P23 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : a / sqrt (a ^ 2 + 8 * b * c) + b / sqrt (b ^ 2 + 8 * a * c) + c / sqrt (c ^ 2 + 8 * a * b) ≤ 2 := by
+theorem P24 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 1) : 1 / (a + 2) + 1 / (b + 2) + 1 / (c + 2) ≤ 1 / (6 * sqrt (a * b) + c) + 1 / (6 * sqrt (b * c) + a) + 1 / (6 * sqrt (c * a) + b) := by
+theorem P25 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 1) : 1 / (a + 2) + 1 / (b + 2) + 1 / (c + 2) ≤ 1 / (3 - 2 * c) + 1 / (3 - 2 * a) + 1 / (3 - 2 * b) := by
+theorem P26 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 3) : (a / (2 * a ^ 2 + a + 1) + b / (2 * b ^ 2 + b + 1) + c / (2 * c ^ 2 + c + 1)) ≤ 3 / 4 := by
+theorem P27 {a b c d : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (hd : d > 0) (h : a + b + c + d = 4) : (a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 ≤ 1 / a ^ 2 + 1 / b ^ 2 + 1 / c ^ 2 + 1 / d ^ 2) := by
+theorem P28 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 8 * (a * b * c) ^ (1 / 3) + ((a ^ 3 + b ^ 3 + c ^ 3) / 3) ^ (1 / 3) ≤ 3 * (a + b + c) := by
+theorem P29 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 1 ≤ a / sqrt (a ^ 2 + 8 * b * c) + b / sqrt (b ^ 2 + 8 * a * c) + c / sqrt (c ^ 2 + 8 * a * b) := by
+theorem P30 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : 27 / (2 * (a + b + c) ^ 2) ≤ 1 / (a * (b+c)) + 1 / (b * (c + a)) + 1 / (c * (a + b)) := by
+theorem P31 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : (3 / 2) * (a ^ 2 + b ^ 2 + c ^ 2) ≤ (a ^ 3 + 5 * b ^ 3) / (3 * a + b) + (b ^ 3 + 5 * c ^ 3) / (3 * b + c) + (c ^ 3 + 5 * a ^ 3) / (3 * c + a) := by
+theorem P32 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a * b * c = 1) : 1 / 3 ≤ (1 / (a ^ 5 * (b + 2 * c) ^ 2)) + (1 / (b ^ 5 * (c + 2 * a) ^ 2)) + (1 / (c ^ 5 * (a + 2 * b) ^ 2)) := by
+theorem P33 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 1) : 1 + sqrt (a * b) + sqrt (b * c) + sqrt (c * a) ≤ sqrt (a * b + c) + sqrt (b * c + a) + sqrt (c * a + b) := by
+theorem P34 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a ^ 2 + b ^ 2 + c ^ 2 = 12) : a * (b ^ 2 + c ^ 2) ^ (1 / 3) + b * (c ^ 2 + a ^ 2) ^ (1 / 3) + c * (a ^ 2 + b ^ 2) ^ (1 / 3) ≤ 12 := by
+theorem P35 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a * b + b * c + c * a = 1) (h' : a * b * c ≤ 1 / (3 * (sqrt 3))) : (1 / a + 6 * b) ^ (1 / 3) + (1 / b + 6 * c) ^ (1 / 3) + (1 / c + 6 * a) ^ (1 / 3) ≤ 1 / (a * b * c) := by
+theorem P36 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h1 : a ^ 2 - a * b + b ^ 2 > 0) (h2 : b ^ 2 - b * c + c ^ 2 > 0) (h3 : c ^ 2 - c * a + a ^ 2 > 0) : sqrt (a ^ 2 - a * b + b ^ 2) + sqrt (b ^ 2 - b * c + c ^ 2) + sqrt (c ^ 2 - c * a + a ^ 2) + 9 * (a * b * c) ^ (1 / 3) ≤ 4 * (a + b + c) := by
+theorem P37 {a b c : ℝ}  (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a ^ 3 + b ^ 3 + c ^ 3 + a * b * c = 4) : (10 - a * b * c) ^ 2 / (a + b + c) ≤ (5 * a ^ 2 + b * c) ^ 2 / ((a + b) * (a + c)) + (5 * b ^ 2 + c * a) ^ 2 / ((b + c) * (b + a)) + (5 * c ^ 2 + a * b)^2 / ((c + a) * (c + b)) := by
+theorem P38 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0)  (h : a + b + c = 3) : sqrt 3 ≤ sqrt (a ^ 2 + a * b + b ^ 2) + sqrt (b ^ 2 + b * c + c ^ 2) + sqrt (c ^ 2 + c * a + a ^ 2) := by
+theorem P39 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a * b * c = 1) : 3 / 2  ≤ (a * b * c) ^ 2 / (a ^ 3 * (b + c)) + (a * b * c) ^ 2 / (b ^ 3 * (c + a)) + (a * b * c) ^ 2 / (c ^ 3 * (a + b)) := by
+theorem P40 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = 3) : (2 * a + b + c) ^ 2 / (2 * a ^ 2 + (b + c) ^ 2) + (2 * b + c + a) ^ 2 / (2 * b ^ 2 + (c + a) ^ 2) + (2 * c + a + b) ^ 2 / (2 * c ^ 2 + (a + b) ^ 2) ≤ 8 := by
+theorem P41 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) : (a + b + c) ^ 3 ≤ (a ^ 5 - a ^ 2 + 3) * (b ^ 5 - b ^ 2 + 3) * (c ^ 5 - c ^ 2 + 3) := by
 theorem P42 {a b c : ℝ} (ha : a > 0) (hb : b > 0) (hc : c > 0) (h : a + b + c = a ^ (1 / 7) + b ^ (1 / 7) + c ^ (1 / 7)) : 1 ≤ a ^ a * b ^ b * c ^ c := by

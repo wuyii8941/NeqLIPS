@@ -33,7 +33,7 @@ save directory: Results
 
 
 ================================================== Iteration 0 ==================================================
-Start time: 2025-03-12 08:21:01.221990
+Start time: 2025-03-13 10:29:50.562500
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
   warnings.warn(f"gpt-4 encounter an error {e}")
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
@@ -61,7 +61,7 @@ Start time: 2025-03-12 08:21:01.221990
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
   warnings.warn(f"gpt-4 encounter an error {e}")
 ================================================== Iteration 1 ==================================================
-Start time: 2025-03-12 08:21:04.909983
+Start time: 2025-03-13 10:29:53.987311
 No more proof states available
 SOS try to prove the goal:   1 ≤ a ^ a * b ^ b * c ^ c
 The results of sos prover: `
@@ -69,7 +69,7 @@ The results of sos prover: `
 `Homonegeous transformation`
 `output a counter-example`
 [a = 1, b = 1, c = 1, a^a = 1, b^b = 1, c^c = 1, V = 2]
-.8e-2, second
+.5e-2, second
 `The form is not positive semi-definite`
 `The poly cannot be proved by sds-based method`
 false | `

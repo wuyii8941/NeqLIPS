@@ -33,7 +33,7 @@ save directory: Results
 
 
 ================================================== Iteration 0 ==================================================
-Start time: 2025-03-12 01:22:18.218962
+Start time: 2025-03-14 10:16:17.598989
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
   warnings.warn(f"gpt-4 encounter an error {e}")
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
@@ -61,7 +61,7 @@ Start time: 2025-03-12 01:22:18.218962
 /home/argustest/tzh/NeqLIPS/LIPS/NeSyCore/llm.py:62: UserWarning: gpt-4 encounter an error The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
   warnings.warn(f"gpt-4 encounter an error {e}")
 ================================================== Iteration 1 ==================================================
-Start time: 2025-03-12 01:23:04.790924
+Start time: 2025-03-14 10:17:01.907000
 No more proof states available
 SOS try to prove the goal:   (a + 2 * b + 3 * c + 4 * d) * a ^ a * b ^ b * c ^ c * d ^ d ≤ 1
 The results of sos prover: `

@@ -1,0 +1,8 @@
+(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(assert (= (+ a b c) 3))
+(assert (not (<= (+ (* -81 (pow a 8)) (* -81 (pow b 8)) (* -81 (pow c 8)) (* (pow (+ (* 512 (pow b 2) (+ (pow a 4) (pow b 4) (* -2 (pow a 2) (pow b 2)))) (* 512 (pow c 2) (+ (pow a 4) (pow c 4) (* -2 (pow a 2) (pow c 2)))) (* 512 (pow b 2) (pow c 2) (+ (pow b 4) (pow c 4) (* -2 (pow b 2) (pow c 2))))) -1) (pow (+ (* 512 a (pow b 2) (+ (pow a 4) (pow b 4) (* -2 (pow a 2) (pow b 2)))) (* 512 a (pow c 2) (+ (pow a 4) (pow c 4) (* -2 (pow a 2) (pow c 2)))) (* 512 (pow b 2) (pow c 2) (+ (pow b 4) (pow c 4) (* -2 (pow b 2) (pow c 2))))) 2)) (* -486 (pow a 4) (pow b 4)) (* -486 (pow a 4) (pow c 4)) (* -486 (pow b 4) (pow c 4)) (* -324 (pow a 2) (pow b 6)) (* -324 (pow a 2) (pow c 6)) (* -324 (pow a 6) (pow b 2)) (* -324 (pow a 6) (pow c 2)) (* -324 (pow b 2) (pow c 6)) (* -324 (pow b 6) (pow c 2)) (* -972 (pow a 2) (pow b 2) (pow c 4)) (* -972 (pow a 2) (pow b 4) (pow c 2)) (* -972 (pow a 4) (pow b 2) (pow c 2)) (* 1024 a b (pow c 2) (+ (pow b 2) (* -1 (pow c 2))) (+ (pow c 2) (* -1 (pow a 2)))) (* 1024 a c (pow b 2) (+ (pow a 2) (* -1 (pow b 2))) (+ (pow b 2) (* -1 (pow c 2)))) (* 1024 b c (pow a 2) (+ (pow a 2) (* -1 (pow b 2))) (+ (pow c 2) (* -1 (pow a 2))))) 0)))
+(check-sat)
+(get-model)
+(exit)
