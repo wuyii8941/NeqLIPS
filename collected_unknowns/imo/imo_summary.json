@@ -1,0 +1,116 @@
+{
+  "P1": {
+    "simplest_unknown": "step_96.smt2",
+    "saved_as": "P1_step_96.smt2",
+    "complexity": 7.436,
+    "total_files": 112
+  },
+  "P2": {
+    "simplest_unknown": "step_133.smt2",
+    "saved_as": "P2_step_133.smt2",
+    "complexity": 6.852000000000001,
+    "total_files": 133
+  },
+  "P3": {
+    "simplest_unknown": "step_31.smt2",
+    "saved_as": "P3_step_31.smt2",
+    "complexity": 6.106,
+    "total_files": 451
+  },
+  "P4": {
+    "simplest_unknown": "step_6.smt2",
+    "saved_as": "P4_step_6.smt2",
+    "complexity": 6.470000000000001,
+    "total_files": 613
+  },
+  "P5": {
+    "simplest_unknown": "step_2213.smt2",
+    "saved_as": "P5_step_2213.smt2",
+    "complexity": 6.19,
+    "total_files": 3044
+  },
+  "P6": {
+    "simplest_unknown": "step_99.smt2",
+    "saved_as": "P6_step_99.smt2",
+    "complexity": 6.082000000000001,
+    "total_files": 750
+  },
+  "P7": {
+    "simplest_unknown": "step_203.smt2",
+    "saved_as": "P7_step_203.smt2",
+    "complexity": 6.748000000000001,
+    "total_files": 247
+  },
+  "P8": {
+    "simplest_unknown": "step_84.smt2",
+    "saved_as": "P8_step_84.smt2",
+    "complexity": 5.998,
+    "total_files": 312
+  },
+  "P9": {
+    "simplest_unknown": "step_72.smt2",
+    "saved_as": "P9_step_72.smt2",
+    "complexity": 6.550000000000001,
+    "total_files": 119
+  },
+  "P10": {
+    "simplest_unknown": "step_363.smt2",
+    "saved_as": "P10_step_363.smt2",
+    "complexity": 7.558000000000001,
+    "total_files": 2310
+  },
+  "P12": {
+    "simplest_unknown": "step_18.smt2",
+    "saved_as": "P12_step_18.smt2",
+    "complexity": 4.992,
+    "total_files": 95
+  },
+  "P13": {
+    "simplest_unknown": "step_3.smt2",
+    "saved_as": "P13_step_3.smt2",
+    "complexity": 5.99,
+    "total_files": 4
+  },
+  "P14": {
+    "simplest_unknown": "step_368.smt2",
+    "saved_as": "P14_step_368.smt2",
+    "complexity": 6.006,
+    "total_files": 379
+  },
+  "P15": {
+    "simplest_unknown": "step_3.smt2",
+    "saved_as": "P15_step_3.smt2",
+    "complexity": 6.140000000000001,
+    "total_files": 307
+  },
+  "P16": {
+    "simplest_unknown": "step_4.smt2",
+    "saved_as": "P16_step_4.smt2",
+    "complexity": 6.8180000000000005,
+    "total_files": 6
+  },
+  "P17": {
+    "simplest_unknown": "step_389.smt2",
+    "saved_as": "P17_step_389.smt2",
+    "complexity": 6.33,
+    "total_files": 903
+  },
+  "P18": {
+    "simplest_unknown": "step_22.smt2",
+    "saved_as": "P18_step_22.smt2",
+    "complexity": 6.666,
+    "total_files": 22
+  },
+  "P19": {
+    "simplest_unknown": "step_17.smt2",
+    "saved_as": "P19_step_17.smt2",
+    "complexity": 9.044,
+    "total_files": 86
+  },
+  "P20": {
+    "simplest_unknown": "step_64.smt2",
+    "saved_as": "P20_step_64.smt2",
+    "complexity": 6.968000000000001,
+    "total_files": 128
+  }
+}

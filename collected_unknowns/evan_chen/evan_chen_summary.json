@@ -1,0 +1,242 @@
+{
+  "P1": {
+    "simplest_unknown": "step_16.smt2",
+    "saved_as": "P1_step_16.smt2",
+    "complexity": 4.642,
+    "total_files": 708
+  },
+  "P2": {
+    "simplest_unknown": "step_10.smt2",
+    "saved_as": "P2_step_10.smt2",
+    "complexity": 4.718,
+    "total_files": 234
+  },
+  "P3": {
+    "simplest_unknown": "step_6.smt2",
+    "saved_as": "P3_step_6.smt2",
+    "complexity": 5.796,
+    "total_files": 500
+  },
+  "P4": {
+    "simplest_unknown": "step_1.smt2",
+    "saved_as": "P4_step_1.smt2",
+    "complexity": 5.808,
+    "total_files": 7
+  },
+  "P5": {
+    "simplest_unknown": "step_58.smt2",
+    "saved_as": "P5_step_58.smt2",
+    "complexity": 6.024000000000001,
+    "total_files": 62
+  },
+  "P6": {
+    "simplest_unknown": "step_1.smt2",
+    "saved_as": "P6_step_1.smt2",
+    "complexity": 5.856,
+    "total_files": 7
+  },
+  "P7": {
+    "simplest_unknown": "step_193.smt2",
+    "saved_as": "P7_step_193.smt2",
+    "complexity": 4.496,
+    "total_files": 212
+  },
+  "P8": {
+    "simplest_unknown": "step_1.smt2",
+    "saved_as": "P8_step_1.smt2",
+    "complexity": 5.844,
+    "total_files": 3
+  },
+  "P9": {
+    "simplest_unknown": "step_27.smt2",
+    "saved_as": "P9_step_27.smt2",
+    "complexity": 6.164000000000001,
+    "total_files": 51
+  },
+  "P10": {
+    "simplest_unknown": "step_95.smt2",
+    "saved_as": "P10_step_95.smt2",
+    "complexity": 6.282000000000001,
+    "total_files": 212
+  },
+  "P11": {
+    "simplest_unknown": "step_16.smt2",
+    "saved_as": "P11_step_16.smt2",
+    "complexity": 7.050000000000001,
+    "total_files": 51
+  },
+  "P12": {
+    "simplest_unknown": "step_4506.smt2",
+    "saved_as": "P12_step_4506.smt2",
+    "complexity": 4.992,
+    "total_files": 4614
+  },
+  "P13": {
+    "simplest_unknown": "step_318.smt2",
+    "saved_as": "P13_step_318.smt2",
+    "complexity": 5.99,
+    "total_files": 322
+  },
+  "P14": {
+    "simplest_unknown": "step_1.smt2",
+    "saved_as": "P14_step_1.smt2",
+    "complexity": 5.99,
+    "total_files": 926
+  },
+  "P15": {
+    "simplest_unknown": "step_5.smt2",
+    "saved_as": "P15_step_5.smt2",
+    "complexity": 5.836,
+    "total_files": 2504
+  },
+  "P16": {
+    "simplest_unknown": "step_7.smt2",
+    "saved_as": "P16_step_7.smt2",
+    "complexity": 6.396000000000001,
+    "total_files": 35
+  },
+  "P17": {
+    "simplest_unknown": "step_1147.smt2",
+    "saved_as": "P17_step_1147.smt2",
+    "complexity": 6.33,
+    "total_files": 3030
+  },
+  "P18": {
+    "simplest_unknown": "step_218.smt2",
+    "saved_as": "P18_step_218.smt2",
+    "complexity": 6.666,
+    "total_files": 302
+  },
+  "P19": {
+    "simplest_unknown": "step_8.smt2",
+    "saved_as": "P19_step_8.smt2",
+    "complexity": 6.518000000000001,
+    "total_files": 1136
+  },
+  "P20": {
+    "simplest_unknown": "step_740.smt2",
+    "saved_as": "P20_step_740.smt2",
+    "complexity": 6.968000000000001,
+    "total_files": 1180
+  },
+  "P21": {
+    "simplest_unknown": "step_84.smt2",
+    "saved_as": "P21_step_84.smt2",
+    "complexity": 5.998,
+    "total_files": 85
+  },
+  "P22": {
+    "simplest_unknown": "step_95.smt2",
+    "saved_as": "P22_step_95.smt2",
+    "complexity": 5.552,
+    "total_files": 104
+  },
+  "P23": {
+    "simplest_unknown": "step_3.smt2",
+    "saved_as": "P23_step_3.smt2",
+    "complexity": 6.518000000000001,
+    "total_files": 17
+  },
+  "P24": {
+    "simplest_unknown": "step_66.smt2",
+    "saved_as": "P24_step_66.smt2",
+    "complexity": 6.672000000000001,
+    "total_files": 80
+  },
+  "P25": {
+    "simplest_unknown": "step_15.smt2",
+    "saved_as": "P25_step_15.smt2",
+    "complexity": 6.516000000000001,
+    "total_files": 24
+  },
+  "P26": {
+    "simplest_unknown": "step_49.smt2",
+    "saved_as": "P26_step_49.smt2",
+    "complexity": 7.052,
+    "total_files": 551
+  },
+  "P27": {
+    "simplest_unknown": "step_120.smt2",
+    "saved_as": "P27_step_120.smt2",
+    "complexity": 7.276000000000002,
+    "total_files": 188
+  },
+  "P28": {
+    "simplest_unknown": "step_84.smt2",
+    "saved_as": "P28_step_84.smt2",
+    "complexity": 5.998,
+    "total_files": 85
+  },
+  "P29": {
+    "simplest_unknown": "step_246.smt2",
+    "saved_as": "P29_step_246.smt2",
+    "complexity": 5.998,
+    "total_files": 246
+  },
+  "P30": {
+    "simplest_unknown": "step_25.smt2",
+    "saved_as": "P30_step_25.smt2",
+    "complexity": 6.134,
+    "total_files": 69
+  },
+  "P31": {
+    "simplest_unknown": "step_412.smt2",
+    "saved_as": "P31_step_412.smt2",
+    "complexity": 6.580000000000001,
+    "total_files": 1484
+  },
+  "P32": {
+    "simplest_unknown": "step_567.smt2",
+    "saved_as": "P32_step_567.smt2",
+    "complexity": 6.006,
+    "total_files": 579
+  },
+  "P33": {
+    "simplest_unknown": "step_9.smt2",
+    "saved_as": "P33_step_9.smt2",
+    "complexity": 6.112,
+    "total_files": 3118
+  },
+  "P34": {
+    "simplest_unknown": "step_29.smt2",
+    "saved_as": "P34_step_29.smt2",
+    "complexity": 6.5840000000000005,
+    "total_files": 156
+  },
+  "P36": {
+    "simplest_unknown": "step_1484.smt2",
+    "saved_as": "P36_step_1484.smt2",
+    "complexity": 7.45,
+    "total_files": 2808
+  },
+  "P37": {
+    "simplest_unknown": "step_36.smt2",
+    "saved_as": "P37_step_36.smt2",
+    "complexity": 7.406000000000001,
+    "total_files": 53
+  },
+  "P38": {
+    "simplest_unknown": "step_803.smt2",
+    "saved_as": "P38_step_803.smt2",
+    "complexity": 6.198,
+    "total_files": 3456
+  },
+  "P39": {
+    "simplest_unknown": "step_743.smt2",
+    "saved_as": "P39_step_743.smt2",
+    "complexity": 5.95,
+    "total_files": 1720
+  },
+  "P40": {
+    "simplest_unknown": "step_72.smt2",
+    "saved_as": "P40_step_72.smt2",
+    "complexity": 6.550000000000001,
+    "total_files": 154
+  },
+  "P41": {
+    "simplest_unknown": "step_38.smt2",
+    "saved_as": "P41_step_38.smt2",
+    "complexity": 5.83,
+    "total_files": 89
+  }
+}

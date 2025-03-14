@@ -16,13 +16,18 @@ class SMTAnalyzer:
         """
         self.base_dir = base_dir
         self.unknown_dir = os.path.join(base_dir, "unknown")
+        self.sat_dir = os.path.join(base_dir, "sat")
+        self.unsat_dir = os.path.join(base_dir, "unsat")
         
         # 检查目录是否存在
-        if not os.path.exists(self.unknown_dir):
-            print(f"警告: 目录 {self.unknown_dir} 不存在")
+        for dir_path in [self.unknown_dir, self.sat_dir, self.unsat_dir]:
+            if not os.path.exists(dir_path):
+                print(f"警告: 目录 {dir_path} 不存在")
         
         # 存储加载的文件内容
         self.unknown_files = {}
+        self.sat_files = {}
+        self.unsat_files = {}
         
         # 加载所有SMT文件
         self._load_all_files()
@@ -41,7 +46,27 @@ class SMTAnalyzer:
                 except Exception as e:
                     print(f"警告: 无法读取文件 {file_path}: {e}")
         
-        print(f"已加载 {len(self.unknown_files)} 个unknown文件")
+        # 加载sat文件
+        if os.path.exists(self.sat_dir):
+            for filename in [f for f in os.listdir(self.sat_dir) if f.endswith('.smt2')]:
+                file_path = os.path.join(self.sat_dir, filename)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        self.sat_files[filename] = f.read()
+                except Exception as e:
+                    print(f"警告: 无法读取文件 {file_path}: {e}")
+        
+        # 加载unsat文件
+        if os.path.exists(self.unsat_dir):
+            for filename in [f for f in os.listdir(self.unsat_dir) if f.endswith('.smt2')]:
+                file_path = os.path.join(self.unsat_dir, filename)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        self.unsat_files[filename] = f.read()
+                except Exception as e:
+                    print(f"警告: 无法读取文件 {file_path}: {e}")
+        
+        print(f"已加载 {len(self.unknown_files)} 个unknown文件, {len(self.sat_files)} 个sat文件, {len(self.unsat_files)} 个unsat文件")
     
     def calculate_complexity(self, smt_content):
         """
@@ -140,9 +165,29 @@ def process_results(source_dir, collection_dir, source_name):
     os.makedirs(source_collection_dir, exist_ok=True)
     
     results = {}
-    problem_dirs = [d for d in os.listdir(source_dir) if os.path.isdir(os.path.join(source_dir, d)) and d.startswith('P')]
     
-    for problem_dir in sorted(problem_dirs, key=lambda x: int(x[1:]) if x[1:].isdigit() else float('inf')):
+    # 检查源目录是否存在
+    if not os.path.exists(source_dir):
+        print(f"警告: 源目录不存在 - {source_dir}")
+        return results
+    
+    # 获取所有问题目录，包括可能有前导零的情况（如P01, P1等）
+    problem_dirs = []
+    for item in os.listdir(source_dir):
+        item_path = os.path.join(source_dir, item)
+        if os.path.isdir(item_path) and item.startswith('P'):
+            # 尝试提取数字部分
+            num_part = item[1:]
+            if num_part.isdigit():
+                problem_dirs.append((item, int(num_part)))
+    
+    # 按数字排序
+    problem_dirs.sort(key=lambda x: x[1])
+    sorted_problem_dirs = [dir_name for dir_name, _ in problem_dirs]
+    
+    print(f"找到 {len(sorted_problem_dirs)} 个问题目录")
+    
+    for problem_dir in sorted_problem_dirs:
         print(f"\n处理问题: {problem_dir}")
         problem_path = os.path.join(source_dir, problem_dir)
         
@@ -198,7 +243,7 @@ def process_results(source_dir, collection_dir, source_name):
         json.dump(results, f, indent=2, ensure_ascii=False)
     
     print(f"\n{source_name}分析摘要:")
-    print(f"总共分析了 {len(problem_dirs)} 个问题目录")
+    print(f"总共分析了 {len(sorted_problem_dirs)} 个问题目录")
     print(f"已收集 {len(results)} 个最简单的unknown文件到 {source_collection_dir}")
     print(f"\n{source_name}分析摘要已保存到 {output_summary_path}")
     
